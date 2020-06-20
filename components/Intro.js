@@ -25,14 +25,13 @@ export default () => (
     <p sx={{ variant: 'para', mt: 4 }}>Hack Club-India Amazon</p>
     <p sx={{ variant: 'para', textAlign: 'center', mb: 4 }}>Alexa Challenge</p>
 
-    {/*
     <img
-      src={'./moreecho.png'}
+      src={'./moreecho2.png'}
       sx={{ width: ['250px', 'initial'] }}
       alt={'Alexa Image'}
-    />*/}
-    <Box sx={{ backgroundImage: `url('./moreecho.png')` }}>sss</Box>
-    <p sx={{ fontWeight: 'bold', fontSize: [1, 4] }}>
+    />
+
+    <p sx={{ fontWeight: 'bold', mt: 0, fontSize: [1, 3, 4, 4] }}>
       Your chance to win an Amazon Alexa Echo Dot{' '}
     </p>
   </Grid>

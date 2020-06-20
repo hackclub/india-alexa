@@ -39,7 +39,7 @@ const flag = () => (
         flexShrink: 0,
         width: ['112px', '172px'],
         height: ['48px', '64px'],
-        ml: [3, 5]
+        ml: [3, 4, 4, 5]
       }}
     ></div>
   </>
