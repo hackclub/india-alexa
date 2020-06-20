@@ -1,5 +1,10 @@
 /**@jsx jsx*/
 import { jsx, Grid, Box } from 'theme-ui'
+import Fade from 'react-reveal/Fade'
+import Bounce from 'react-reveal/Bounce'
+import Zoom from 'react-reveal/Zoom'
+import config from 'react-reveal/globals'
+config({ ssrFadeout: true })
 
 export default () => (
   <Grid
@@ -22,17 +27,25 @@ export default () => (
       }
     }}
   >
-    <p sx={{ variant: 'para', mt: 4 }}>Hack Club-India Amazon</p>
-    <p sx={{ variant: 'para', textAlign: 'center', mb: 4 }}>Alexa Challenge</p>
+    <Zoom>
+      <p sx={{ variant: 'para', mt: 4 }}>Hack Club-India Amazon</p>
+      <p sx={{ variant: 'para', textAlign: 'center', mb: 4 }}>
+        Alexa Challenge
+      </p>
+    </Zoom>
+    <Bounce bottom>
+      {' '}
+      <img
+        src={'./moreecho2.png'}
+        sx={{ width: ['250px', 'initial'] }}
+        alt={'Alexa Image'}
+      />
+    </Bounce>
 
-    <img
-      src={'./moreecho2.png'}
-      sx={{ width: ['250px', 'initial'] }}
-      alt={'Alexa Image'}
-    />
-
-    <p sx={{ fontWeight: 'bold', mt: 0, fontSize: [1, 3, 4, 4] }}>
-      Your chance to win an Amazon Alexa Echo Dot{' '}
-    </p>
+    <Bounce>
+      <p sx={{ fontWeight: 'bold', mt: 0, fontSize: [1, 3, 4, 4] }}>
+        Your chance to win an Amazon Alexa Echo Dot{' '}
+      </p>
+    </Bounce>
   </Grid>
 )
