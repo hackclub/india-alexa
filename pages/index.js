@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Nav from '../components/nav'
 import Intro from '../components/Intro'
+import Challenge from '../components/Challenge'
 const Home = () => (
   <>
     <Head>
@@ -8,6 +9,7 @@ const Home = () => (
     </Head>
     <Nav />
     <Intro />
+    <Challenge />
   </>
 )
 
