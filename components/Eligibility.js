@@ -60,6 +60,6 @@ const reda = ' Know More >'
 const bluebg = 'linear-gradient(159.44deg, #338EDA 1.01%, #1469AF 101.08%)'
 const blueh1 = 'Member: must be from India and hack club member'
 const bluep =
-  'You must be from India ( 🇮🇳 )  and a hack club member! Due to covid-19 we are not shipping outside. '
+  'You must be from India ( 🇮🇳 )  and a hack club member! Due to covid-19 we are not shipping internationally. '
 const bluelink = './'
-const bluea = 'Join Hack Club'
+const bluea = 'Join Hack Club >'
