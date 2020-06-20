@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Nav from '../components/nav'
 import Intro from '../components/Intro'
 import Challenge from '../components/Challenge'
+import Eligibility from '../components/Eligibility'
 const Home = () => (
   <>
     <Head>
@@ -10,6 +11,7 @@ const Home = () => (
     <Nav />
     <Intro />
     <Challenge />
+    <Eligibility />
   </>
 )
 

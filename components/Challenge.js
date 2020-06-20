@@ -1,24 +1,13 @@
 /**@jsx jsx*/
 import { jsx } from 'theme-ui'
+import RegisterButton from './Register'
 
 export default () => (
-  <div sx={{ width: '100%' }}>
-    <h1 sx={{ color: 'red', fontSize: [4, 5, 6], m: 0, mt: 3, ml: [2, 4] }}>
-      The Challenge
-    </h1>
-    {/*
-    <p sx={{ ml: 3, mt: 0, fontSize: 3, width: '70vw' }}>
-      Tell us about your idea which must involve
-      <b> Amazon Alexa or the Echo Dot</b> hardware and the best one wins an
-      Amazon Alexa Echo dot!
-    </p>*/}
+  <div sx={{ width: '100%', mt: [3, 4] }}>
+    <h1 sx={{ color: 'red', variant: 'challengeh' }}>The Challenge</h1>
     <p
       sx={{
-        ml: [2, 4],
-        mr: ['2', null],
-        mt: 0,
-        fontSize: [2, 2, 3],
-        width: ['98w', '80vw']
+        variant: 'challengep'
       }}
     >
       Do you think you can come up with some interesting ideas revolving around
@@ -28,16 +17,21 @@ export default () => (
     </p>
     <p
       sx={{
-        ml: [2, 4],
-        mr: ['2', null],
-        mt: 0,
-        fontSize: [2, 2, 3],
-        width: ['98w', '80vw']
+        variant: 'challengep'
       }}
     >
       🧲 Bonus points for those solutions involving
       <b sx={{ color: 'cyan' }}> Covid-19</b> or promoting{' '}
       <b sx={{ color: 'cyan' }}> social-distancing.</b>
     </p>
+    <div
+      sx={{ width: '100vw', display: 'flex', justifyContent: 'center', mt: 5 }}
+    >
+      <RegisterButton
+        fontSize={[null, 2]}
+        width={['180px', '210px']}
+        height={['50px', '60px']}
+      />
+    </div>
   </div>
 )

@@ -20,7 +20,7 @@ export default () => (
         alignItems: 'center'
       }}
     >
-      <RegisterButton />
+      <RegisterButton width={['130px', '150px']} height={['35px', '40px']} />
     </div>
   </Flex>
 )

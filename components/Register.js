@@ -1,16 +1,16 @@
 /**@jsx jsx*/
 import { jsx } from 'theme-ui'
 
-export default () => (
+export default ({ width, height, display, fontSize }) => (
   <div
     sx={{
-      width: '150px',
-      height: '40px',
+      width: width ? width : '150px',
+      height: height ? height : '40px',
       background: `linear-gradient(98.52deg, #07FFD0 4.81%, rgba(47, 208, 57, 0.96) 94.34%)`,
       color: 'white',
       textAlign: 'center',
       mr: 3,
-      display: ['none', 'none', 'flex'],
+      display: display ? display : 'flex',
       borderRadius: '50px',
       flexDirection: 'column',
       alignItems: 'center',
@@ -22,7 +22,7 @@ export default () => (
       }
     }}
   >
-    <p sx={{ m: 0 }}>
+    <p sx={{ m: 0, fontSize: fontSize ? fontSize : null }}>
       <b>REGISTER {`>>`}</b>
     </p>
   </div>
