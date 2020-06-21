@@ -3,14 +3,14 @@ import { jsx, Grid } from 'theme-ui'
 
 export default () => (
   <div sx={{ width: '100vw', bg: '#F9F9FA', mt: 5 }}>
-    <h1 sx={{ variant: 'challengeh', color: 'blue' }}>Eligibilty</h1>
+    <h1 sx={{ variant: 'challengeh', color: 'blue', pt: 4 }}>Eligibilty</h1>
     <p sx={{ variant: 'challengep' }}>
       You are eligible to enter if you meet the following requirements at time
       of entry:
     </p>
     <Grid
       columns={[null, null, 2]}
-      sx={{ justifyContent: [null, null, 'center'], mx: 'auto', mb: 4 }}
+      sx={{ justifyContent: [null, null, 'center'], mx: 'auto', pb: 5, mt: 4 }}
     >
       <Card h1={redh1} p={redp} a={reda} link={redlink} bg={redbg} />
       <Card h1={blueh1} p={bluep} a={bluea} link={bluelink} bg={bluebg} />
