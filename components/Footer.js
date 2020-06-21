@@ -37,7 +37,7 @@ export default () => (
       >
         <p
           sx={{
-            ml: [3, 3, 6],
+            ml: [3, 3, 5],
             fontSize: [2, 2, 3],
             ':hover': {
               cursor: 'pointer'
@@ -48,7 +48,7 @@ export default () => (
         </p>
         <p
           sx={{
-            ml: [3, 3, 6],
+            ml: [3, 3, 5],
             fontSize: [2, 2, 3],
             ':hover': {
               cursor: 'pointer'
@@ -59,7 +59,7 @@ export default () => (
         </p>
         <p
           sx={{
-            ml: [3, 3, 6],
+            ml: [3, 3, 5],
             mt: [0],
             fontSize: [2, 2, 3],
             flexBasis: ['100%', '100%', null],
