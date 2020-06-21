@@ -4,7 +4,7 @@ import { jsx, Grid } from 'theme-ui'
 //general margin rules are [3,5,6]
 
 export default () => (
-  <div sx={{ width: '100vw', mt: 4 }}>
+  <div sx={{ width: '100vw', mt: [4] }}>
     <h1 sx={{ variant: 'challengeh', color: 'orange' }}>Schedule 🗓️</h1>
     <p sx={{ variant: 'challengep' }}>
       The registrations will open from{' '}
@@ -19,7 +19,7 @@ export default () => (
         mr: [3, 5],
         mt: [4, 5],
         mb: 5,
-        gap: [null, null, null, 4]
+        gap: [4, null, null, 4]
       }}
     >
       <Card

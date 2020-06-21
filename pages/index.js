@@ -5,7 +5,8 @@ import Challenge from '../components/Challenge'
 import Eligibility from '../components/Eligibility'
 import Timeline from '../components/Timeline'
 import Alexa from '../components/Alexa'
-
+import Shipping from '../components/Shipping'
+import Footer from '../components/Footer'
 const Home = () => (
   <>
     <Head>
@@ -16,7 +17,9 @@ const Home = () => (
     <Challenge />
     <Eligibility />
     <Timeline />
+    <Shipping />
     <Alexa />
+    <Footer />
   </>
 )
 

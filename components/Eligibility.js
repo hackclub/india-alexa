@@ -10,7 +10,13 @@ export default () => (
     </p>
     <Grid
       columns={[null, null, 2]}
-      sx={{ justifyContent: [null, null, 'center'], mx: 'auto', pb: 5, mt: 4 }}
+      sx={{
+        justifyContent: [null, null, 'center'],
+        mx: 'auto',
+        pb: 5,
+        mt: 4,
+        gap: [4]
+      }}
     >
       <Card h1={redh1} p={redp} a={reda} link={redlink} bg={redbg} />
       <Card h1={blueh1} p={bluep} a={bluea} link={bluelink} bg={bluebg} />
