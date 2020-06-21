@@ -88,7 +88,7 @@ const heading = {
 
 const para = {
   application: 'The application start from ',
-  closing: 'The registration ends on  from ',
+  closing: 'The registration will end on ',
   results: 'Results declared on '
 }
 

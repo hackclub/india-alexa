@@ -3,7 +3,7 @@ import { jsx } from 'theme-ui'
 import RegisterButton from './Register'
 
 export default () => (
-  <div sx={{ width: '100%', mt: [3, 4] }}>
+  <div sx={{ width: '100%', mt: [4, 5] }}>
     <h1 sx={{ color: 'red', variant: 'challengeh' }}>The Challenge</h1>
     <p
       sx={{
@@ -25,7 +25,12 @@ export default () => (
       <b sx={{ color: 'cyan' }}> social-distancing.</b>
     </p>
     <div
-      sx={{ width: '100vw', display: 'flex', justifyContent: 'center', mt: 5 }}
+      sx={{
+        width: '100vw',
+        display: 'flex',
+        justifyContent: 'center',
+        mt: [4, 5]
+      }}
     >
       <RegisterButton
         fontSize={[null, 2]}

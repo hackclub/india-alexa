@@ -2,7 +2,7 @@
 import { jsx, Grid } from 'theme-ui'
 
 export default () => (
-  <div sx={{ width: '100vw', bg: '#F9F9FA', mt: 5 }}>
+  <div sx={{ width: '100vw', bg: 'bgsection', mt: [4, 5] }}>
     <h1 sx={{ variant: 'challengeh', color: 'blue', pt: 4 }}>Eligibilty</h1>
     <p sx={{ variant: 'challengep' }}>
       You are eligible to enter if you meet the following requirements at time
@@ -27,14 +27,14 @@ const Card = ({ bg, h1, p, link, a }) => (
       borderRadius: 5
     }}
   >
-    <h1 sx={{ color: 'white', mt: 4, ml: 4, mr: 2 }}>{h1}</h1>
-    <p sx={{ ml: 4, mr: 2, color: 'white', fontSize: 2 }}>{p}</p>
+    <h1 sx={{ color: 'white', mt: 4, ml: [3, 4], mr: 2 }}>{h1}</h1>
+    <p sx={{ ml: [3, 4], mr: 2, color: 'white', fontSize: 2 }}>{p}</p>
     <div className="linkcontainer" sx={{ mb: 4 }}>
       <a
         href={link}
         sx={{
           color: 'white',
-          ml: 4,
+          ml: [3, 4],
           fontSize: '2',
           textDecorationLine: 'none',
           ':hover': {

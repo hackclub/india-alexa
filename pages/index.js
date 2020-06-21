@@ -4,6 +4,8 @@ import Intro from '../components/Intro'
 import Challenge from '../components/Challenge'
 import Eligibility from '../components/Eligibility'
 import Timeline from '../components/Timeline'
+import Alexa from '../components/Alexa'
+
 const Home = () => (
   <>
     <Head>
@@ -14,6 +16,7 @@ const Home = () => (
     <Challenge />
     <Eligibility />
     <Timeline />
+    <Alexa />
   </>
 )
 
