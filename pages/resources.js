@@ -3,15 +3,15 @@ import Meta from '@hackclub/meta'
 import Head from 'next/head'
 import Nav from '../components/nav'
 import Footer from '../components/Footer'
-import Press from '../components/faq.mdx'
+import Resources from '../components/resources.mdx'
 
 export default () => (
   <>
     <Meta
       as={Head}
-      title="FAQs"
-      description="Hack Club Alexa Challenge FAQ i.e Frequently Asked Questions"
-      //  image="https://workshop-cards.hackclub.com/Press.png?fontSize=350px&brand=HQ"
+      title="Alexa Resources"
+      description="Resources for Hack Club-India Alexa Challenge"
+      //  image="https://workshop-cards.hackclub.com/press.png?fontSize=350px&brand=HQ"
     />
     <Nav />
     <Box
@@ -26,10 +26,10 @@ export default () => (
     >
       <Container variant="copy">
         <Heading as="h1" variant="title" sx={{ color: 'primary', mt: [2, 4] }}>
-          FAQ ( Frequently Asked Questions )
+          Alexa Resources
         </Heading>
         <Heading as="h2" variant="subtitle" sx={{ mt: 3, color: 'text' }}>
-          Some of the most asked questions about the challenge
+          We are providing you with some Amazon Alexa Resources.
         </Heading>
       </Container>
     </Box>
@@ -43,7 +43,7 @@ export default () => (
       }}
     >
       <Heading id="banners" variant="headline">
-        Should I be a Hack Club Member in order to join the challenge ?
+        What is Alexa ?
       </Heading>
       <Box
         as={BaseStyles}
@@ -54,7 +54,7 @@ export default () => (
           h2: { variant: 'text.headline', mt: 4 }
         }}
       >
-        <Press />
+        <Resources />
       </Box>
     </Container>
     <Footer />

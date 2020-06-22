@@ -32,30 +32,46 @@ export default () => (
           mx: 'auto',
           display: ['flex', 'flex', 'initial'],
           flexWrap: 'wrap',
-          justifyContent: 'center'
+          justifyContent: 'center',
+          a: {
+            textDecorationLine: 'none',
+            color: '#1F2D48'
+          }
         }}
       >
         <p
           sx={{
             ml: [3, 3, 5],
-            fontSize: [2, 2, 3],
-            ':hover': {
-              cursor: 'pointer'
-            }
+            fontSize: [2, 2, 3]
           }}
         >
-          FAQ
+          <span
+            sx={{
+              ':hover': {
+                cursor: 'pointer'
+              }
+            }}
+            onClick={() => open('./faq')}
+          >
+            <a href="./faq">FAQ</a>
+          </span>
         </p>
         <p
           sx={{
             ml: [3, 3, 5],
-            fontSize: [2, 2, 3],
-            ':hover': {
-              cursor: 'pointer'
-            }
+            fontSize: [2, 2, 3]
           }}
+          onClick={() => open('./resources')}
         >
-          Resources
+          <span
+            sx={{
+              ':hover': {
+                cursor: 'pointer'
+              }
+            }}
+          >
+            <a href="./resources">Resources</a>
+          </span>
         </p>
         <p
           sx={{
@@ -73,23 +89,67 @@ export default () => (
         <p sx={{ fontSize: [2, 2, 3], mr: [1, null], textAlign: ['center'] }}>
           Connect With Us
         </p>
-        <img
-          src="social/facebook.png"
-          sx={{ width: [40, 46, 50, 64], height: [40, 46, 50, 64], mx: [2, 3] }}
-        ></img>
-        <img
-          src="social/instagram.png"
-          sx={{ width: [40, 46, 50, 64], height: [40, 46, 50, 64], mx: [2, 3] }}
-        ></img>
-        <img
-          src="social/twitter.png"
-          sx={{ width: [40, 46, 50, 64], height: [40, 46, 50, 64], mx: [2, 3] }}
-        ></img>
-        <img
-          src="social/youtube.png"
-          sx={{ width: [40, 46, 50, 64], height: [40, 46, 50, 64], mx: [2, 3] }}
-        ></img>
+        <a href="https://www.facebook.com/hackclubindia/" target="_blank">
+          <img
+            src="social/facebook.png"
+            onClick={() =>
+              open(`https://www.facebook.com/hackclubindia/`, '_blank')
+            }
+            sx={{
+              width: [40, 46, 50, 64],
+              height: [40, 46, 50, 64],
+              mx: [2, 3]
+            }}
+          ></img>
+        </a>
+        <a href="https://www.instagram.com/hackclubindia/" target="_blank">
+          <img
+            src="social/instagram.png"
+            sx={{
+              width: [40, 46, 50, 64],
+              height: [40, 46, 50, 64],
+              mx: [2, 3]
+            }}
+            onClick={() =>
+              open(`https://www.instagram.com/hackclubindia/`, '_blank')
+            }
+          ></img>
+        </a>
+        <a href="https://twitter.com/HackClubIndia" target="_blank">
+          <img
+            src="social/twitter.png"
+            sx={{
+              width: [40, 46, 50, 64],
+              height: [40, 46, 50, 64],
+              mx: [2, 3]
+            }}
+            onClick={() => open(`https://twitter.com/HackClubIndia`, '_blank')}
+          ></img>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCQzO0jpcRkP-9eWKMpJyB0w"
+          target="_blank"
+        >
+          <img
+            src="social/youtube.png"
+            sx={{
+              width: [40, 46, 50, 64],
+              height: [40, 46, 50, 64],
+              mx: [2, 3]
+            }}
+            onClick={() =>
+              open(
+                `https://www.youtube.com/channel/UCQzO0jpcRkP-9eWKMpJyB0w`,
+                '_blank'
+              )
+            }
+          ></img>
+        </a>
       </div>
     </Grid>
   </div>
 )
+
+/**functions to open social media handles and other pages*/
+
+const open = (url, mode) => window.open(url, mode ? mode : '_self')

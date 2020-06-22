@@ -8,10 +8,10 @@ export default () => (
     <p sx={{ variant: 'challengep' }}>
       The winner of the challenge will directly be contacted by our team and we
       will dispatch the <b sx={{ color: 'orange' }}>echo dot for free! </b>
-      Due to Covid-19 we are not shipping outside India.
+      Due to Covid-19, we are not shipping outside India.
     </p>
     <a
-      href="./"
+      href="./faq#shipping"
       sx={{
         ml: [3, 5, 6],
         fontSize: [2, 2, 3],
@@ -21,6 +21,7 @@ export default () => (
           textDecorationLine: 'underline'
         }
       }}
+      target="_blank"
     >
       Learn More {'>'}{' '}
     </a>

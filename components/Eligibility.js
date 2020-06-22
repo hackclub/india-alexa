@@ -3,7 +3,7 @@ import { jsx, Grid } from 'theme-ui'
 
 export default () => (
   <div sx={{ width: '100vw', bg: 'bgsection', mt: [4, 5] }}>
-    <h1 sx={{ variant: 'challengeh', color: 'blue', pt: 4 }}>Eligibilty</h1>
+    <h1 sx={{ variant: 'challengeh', color: 'blue', pt: 4 }}>Eligibility</h1>
     <p sx={{ variant: 'challengep' }}>
       You are eligible to enter if you meet the following requirements at time
       of entry:
@@ -48,6 +48,7 @@ const Card = ({ bg, h1, p, link, a }) => (
             textDecorationLine: 'underline'
           }
         }}
+        target="_blank"
       >
         {a}{' '}
       </a>
@@ -58,14 +59,14 @@ const Card = ({ bg, h1, p, link, a }) => (
 /**This is the data for the cards */
 
 const redbg = 'linear-gradient(159.44deg, #E32D42 1.01%, #B62434 99.4%)'
-const redh1 = 'Originality: idea must be original plagiarism not allowed'
-const redp = 'Your idea must be original and must be solving social probelms 💡'
-const redlink = './'
+const redh1 = 'Originality: the idea must be original plagiarism not allowed'
+const redp = 'Your idea must be original and must be solving social problems 💡'
+const redlink = './faq#idea'
 const reda = ' Know More >'
 
 const bluebg = 'linear-gradient(159.44deg, #338EDA 1.01%, #1469AF 101.08%)'
 const blueh1 = 'Member: must be from India and hack club member'
 const bluep =
-  'You must be from India ( 🇮🇳 )  and a hack club member! Due to covid-19 we are not shipping internationally. '
-const bluelink = './'
+  'You must be from India ( 🇮🇳 )  and a hack club member! Due to COVID-19 we are not shipping internationally. '
+const bluelink = 'https://hackclub.com/#slack'
 const bluea = 'Join Hack Club >'

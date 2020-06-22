@@ -30,19 +30,22 @@ const scrolled = props =>
 
 const flag = () => (
   <>
-    <div
-      sx={{
-        backgroundImage:
-          'url(https://assets.hackclub.com/flag-orpheus-top.svg)',
-        backgroundSize: 'contain',
-        backgroundRepeat: 'no-repeat',
-        flexShrink: 0,
-        width: ['112px', '172px'],
-        height: ['48px', '64px'],
-        ml: [3, 4, 4, 5]
-      }}
-    ></div>
+    <a href="https://hackclub.com/" target="__blank">
+      <div
+        sx={{
+          backgroundImage: 'url(./flag.svg)',
+          backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat',
+          flexShrink: 0,
+          width: ['112px', '172px'],
+          height: ['48px', '64px'],
+          ml: [3, 4, 4, 5]
+        }}
+      ></div>
+    </a>
   </>
 )
 
 export default flag
+
+/**url(https://assets.hackclub.com/flag-orpheus-top.svg) */

@@ -63,30 +63,35 @@ const Card = ({ gradient, img, heading, para }) => (
 )
 
 const Button = ({ width, height, display, fontSize }) => (
-  <div
-    sx={{
-      width: width ? width : '150px',
-      height: height ? height : '40px',
-      background: `linear-gradient(143.95deg, #D03085 11.23%, #DC2430 101.13%)`,
-      color: 'white',
-      textAlign: 'center',
-      mr: 3,
-      display: display ? display : 'flex',
-      borderRadius: '50px',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      ':hover': {
-        cursor: 'pointer',
-        transform: 'scale(1.1)',
-        transition: '0.2s'
-      }
-    }}
-  >
-    <p sx={{ m: 0, fontSize: fontSize ? fontSize : 2 }}>
-      <b>Resources {`>>`}</b>
-    </p>
-  </div>
+  <a href="./resources" sx={{ textDecorationLine: 'none' }} target="_blank">
+    <div
+      sx={{
+        width: width ? width : '150px',
+        height: height ? height : '40px',
+        background: `linear-gradient(143.95deg, #D03085 11.23%, #DC2430 101.13%)`,
+        color: 'white',
+        textAlign: 'center',
+        mr: 3,
+        display: display ? display : 'flex',
+        borderRadius: '50px',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        ':hover': {
+          cursor: 'pointer',
+          transform: 'scale(1.1)',
+          transition: '0.2s'
+        }
+      }}
+      onClick={() => {
+        window.open('./resources', '_blank')
+      }}
+    >
+      <p sx={{ m: 0, fontSize: fontSize ? fontSize : 2 }}>
+        <b>Resources {`>>`}</b>
+      </p>
+    </div>
+  </a>
 )
 
 /**data for the cards defined here */
