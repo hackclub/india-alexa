@@ -23,7 +23,7 @@ export default ({ width, height, display, fontSize }) => (
         }
       }}
       onClick={() => {
-        window.open('http://hack.af/alexa', '_self')
+        //  window.open('http://hack.af/alexa', '_self')
       }}
     >
       <p sx={{ m: 0, fontSize: fontSize ? fontSize : null }}>

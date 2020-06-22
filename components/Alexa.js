@@ -84,7 +84,7 @@ const Button = ({ width, height, display, fontSize }) => (
         }
       }}
       onClick={() => {
-        window.open('./resources', '_blank')
+        //   window.open('./resources', '_blank')
       }}
     >
       <p sx={{ m: 0, fontSize: fontSize ? fontSize : 2 }}>
