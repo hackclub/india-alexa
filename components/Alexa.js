@@ -12,7 +12,12 @@ export default () => (
     </p>
     {/*    <GridComp />*/}
     <div
-      sx={{ width: '100vw', display: 'flex', mt: 5, justifyContent: 'center' }}
+      sx={{
+        width: '100vw',
+        display: 'flex',
+        mt: [4, 5],
+        justifyContent: 'center'
+      }}
     >
       <Button
         fontSize={[null, 3]}
