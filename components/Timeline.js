@@ -89,11 +89,11 @@ const heading = {
 const para = {
   application: 'The application starts on ',
   closing: 'The registration will end on ',
-  results: 'The results declared on '
+  results: 'The results declared by '
 }
 
 const date = {
-  application: '25th June 2020.',
-  closing: '7th July 2020.',
-  results: '12th July 2020.'
+  application: '26th June 2020.',
+  closing: '17th July 2020.',
+  results: 'last week of July'
 }
