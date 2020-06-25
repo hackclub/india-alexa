@@ -82,7 +82,7 @@ export default () => (
             textAlign: ['center', 'center', 'initial']
           }}
         >
-          Contact- +91 98765435690
+          Contact- india@hacklcub.com
         </p>
       </div>
       <div className="footersecondhalf" sx={{ mx: 'auto' }}>
