@@ -8,8 +8,8 @@ export default () => (
     <h1 sx={{ variant: 'challengeh', color: 'orange' }}>Schedule 🗓️</h1>
     <p sx={{ variant: 'challengep' }}>
       The registrations will open from{' '}
-      <b sx={{ color: 'blue' }}>25-June-2020 </b>
-      and will end on <b sx={{ color: 'red' }}>7-July-2020.</b>
+      <b sx={{ color: 'blue' }}>26-June-2020 </b>
+      and will end on <b sx={{ color: 'red' }}>17-July-2020.</b>
     </p>
     <Grid
       columns={[null, null, null, 3]}
