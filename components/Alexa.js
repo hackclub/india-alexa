@@ -10,32 +10,10 @@ export default () => (
       by Amazon. Alexa is used with lots of devices and{' '}
       <b sx={{ color: 'green' }}>Echo Dot</b> is one of them.
     </p>
-
-    <Grid
-      columns={[null, null, null, 2]}
-      className="timeline"
-      sx={{
-        ml: [3, 5, 6],
-        mr: [3, 5],
-        mt: [4, 5],
-        mb: [4, 5],
-        gap: [4]
-      }}
+    {/*    <GridComp />*/}
+    <div
+      sx={{ width: '100vw', display: 'flex', mt: 5, justifyContent: 'center' }}
     >
-      <Card
-        gradient={gradient.voice}
-        img={img.voice}
-        heading={heading.voice}
-        para={para.voice}
-      />
-      <Card
-        gradient={gradient.robot}
-        img={img.robot}
-        heading={heading.robot}
-        para={para.robot}
-      />
-    </Grid>
-    <div sx={{ width: '100vw', display: 'flex', justifyContent: 'center' }}>
       <Button
         fontSize={[null, 3]}
         width={['180px', '210px']}
@@ -60,6 +38,33 @@ const Card = ({ gradient, img, heading, para }) => (
     <h1>{heading}</h1>
     <p sx={{ fontSize: 2, width: '90%' }}>{para}</p>
   </div>
+)
+
+const GridComp = () => (
+  <Grid
+    columns={[null, null, null, 2]}
+    className="timeline"
+    sx={{
+      ml: [3, 5, 6],
+      mr: [3, 5],
+      mt: [4, 5],
+      mb: [4, 5],
+      gap: [4]
+    }}
+  >
+    <Card
+      gradient={gradient.voice}
+      img={img.voice}
+      heading={heading.voice}
+      para={para.voice}
+    />
+    <Card
+      gradient={gradient.robot}
+      img={img.robot}
+      heading={heading.robot}
+      para={para.robot}
+    />
+  </Grid>
 )
 
 const Button = ({ width, height, display, fontSize }) => (
