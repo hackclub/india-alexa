@@ -82,7 +82,7 @@ export default () => (
             textAlign: ['center', 'center', 'initial']
           }}
         >
-          Contact- india@hacklcub.com
+          Contact- india@hackclub.com
         </p>
       </div>
       <div className="footersecondhalf" sx={{ mx: 'auto' }}>
